@@ -5,7 +5,7 @@ class AppConstants {
   static const String appName = 'Gazzer Restaurant';
   static const double appVersion = 7.6;
 
-  static const String baseUrl = 'https://stackfood-admin.6amtech.com';
+  static const String baseUrl = 'https://carrot.refilex.com';
 
   // https://stackfood-admin.6amtech.com
   static const String configUri = '/api/v1/config';
