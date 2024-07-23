@@ -565,244 +565,244 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                                                     .paddingSizeLarge),
                                           ])
                                     : const SizedBox(),
-                                Row(children: [
-                                  Text('customer_details'.tr,
-                                      style: robotoMedium),
-                                  order.isGuest!
-                                      ? Text(' (${'guest_user'.tr})',
-                                          style: robotoMedium.copyWith(
-                                              color: Colors.green))
-                                      : const SizedBox(),
-                                ]),
-                                const SizedBox(
-                                    height: Dimensions.paddingSizeSmall),
-                                Row(children: [
-                                  ClipOval(
-                                      child: CustomImageWidget(
-                                    image: order.customer != null
-                                        ? '${Get.find<SplashController>().configModel!.baseUrls!.customerImageUrl}/${order.customer!.image}'
-                                        : '',
-                                    height: 35,
-                                    width: 35,
-                                    fit: BoxFit.cover,
-                                  )),
-                                  const SizedBox(
-                                      width: Dimensions.paddingSizeSmall),
-                                  Expanded(
-                                      child: order.deliveryAddress != null
-                                          ? Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                  Text(
-                                                    order.deliveryAddress!
-                                                        .contactPersonName!,
-                                                    maxLines: 1,
-                                                    overflow:
-                                                        TextOverflow.ellipsis,
-                                                    style:
-                                                        robotoRegular.copyWith(
-                                                            fontSize: Dimensions
-                                                                .fontSizeSmall),
-                                                  ),
-                                                  Text(
-                                                    order.deliveryAddress!
-                                                                .address !=
-                                                            null
-                                                        ? order.deliveryAddress!
-                                                            .address!
-                                                        : '',
-                                                    maxLines: 1,
-                                                    overflow:
-                                                        TextOverflow.ellipsis,
-                                                    style:
-                                                        robotoRegular.copyWith(
-                                                            fontSize: Dimensions
-                                                                .fontSizeSmall,
-                                                            color: Theme.of(
-                                                                    context)
-                                                                .disabledColor),
-                                                  ),
-                                                  Wrap(children: [
-                                                    (order.deliveryAddress
-                                                                    ?.streetNumber !=
-                                                                null &&
-                                                            order
-                                                                .deliveryAddress!
-                                                                .streetNumber!
-                                                                .isNotEmpty)
-                                                        ? Text(
-                                                            '${'street_number'.tr}: ${order.deliveryAddress!.streetNumber!}${(order.deliveryAddress?.house != null && order.deliveryAddress!.house!.isNotEmpty) ? ', ' : ' '}',
-                                                            style: robotoRegular.copyWith(
-                                                                fontSize: Dimensions
-                                                                    .fontSizeExtraSmall,
-                                                                color: Theme.of(
-                                                                        context)
-                                                                    .disabledColor),
-                                                            maxLines: 1,
-                                                            overflow:
-                                                                TextOverflow
-                                                                    .ellipsis,
-                                                          )
-                                                        : const SizedBox(),
-                                                    (order.deliveryAddress
-                                                                    ?.house !=
-                                                                null &&
-                                                            order
-                                                                .deliveryAddress!
-                                                                .house!
-                                                                .isNotEmpty)
-                                                        ? Text(
-                                                            '${'house'.tr}: ${order.deliveryAddress!.house!}${(order.deliveryAddress!.floor != null && order.deliveryAddress!.floor!.isNotEmpty) ? ', ' : ' '}',
-                                                            style: robotoRegular.copyWith(
-                                                                fontSize: Dimensions
-                                                                    .fontSizeExtraSmall,
-                                                                color: Theme.of(
-                                                                        context)
-                                                                    .disabledColor),
-                                                            maxLines: 1,
-                                                            overflow:
-                                                                TextOverflow
-                                                                    .ellipsis,
-                                                          )
-                                                        : const SizedBox(),
-                                                    (order.deliveryAddress
-                                                                    ?.floor !=
-                                                                null &&
-                                                            order
-                                                                .deliveryAddress!
-                                                                .floor!
-                                                                .isNotEmpty)
-                                                        ? Text(
-                                                            '${'floor'.tr}: ${order.deliveryAddress!.floor!}',
-                                                            style: robotoRegular.copyWith(
-                                                                fontSize: Dimensions
-                                                                    .fontSizeExtraSmall,
-                                                                color: Theme.of(
-                                                                        context)
-                                                                    .disabledColor),
-                                                            maxLines: 1,
-                                                            overflow:
-                                                                TextOverflow
-                                                                    .ellipsis,
-                                                          )
-                                                        : const SizedBox(),
-                                                  ]),
-                                                ])
-                                          : Text('walking_customer'.tr,
-                                              style: robotoMedium)),
-                                  (order.orderType == 'take_away' &&
-                                          (order.orderStatus == 'pending' ||
-                                              order.orderStatus ==
-                                                  'confirmed' ||
-                                              order.orderStatus ==
-                                                  'processing'))
-                                      ? TextButton.icon(
-                                          onPressed: () async {
-                                            String url =
-                                                'https://www.google.com/maps/dir/?api=1&destination=${order.deliveryAddress?.latitude}'
-                                                ',${order.deliveryAddress?.longitude}&mode=d';
-                                            if (await canLaunchUrlString(url)) {
-                                              await launchUrlString(url,
-                                                  mode: LaunchMode
-                                                      .externalApplication);
-                                            } else {
-                                              showCustomSnackBar(
-                                                  'unable_to_launch_google_map'
-                                                      .tr);
-                                            }
-                                          },
-                                          icon: const Icon(Icons.directions),
-                                          label: Text('direction'.tr),
-                                        )
-                                      : const SizedBox(),
-                                  const SizedBox(
-                                      width: Dimensions.paddingSizeSmall),
-                                  (controllerOrderModel.orderStatus !=
-                                              'delivered' &&
-                                          controllerOrderModel.orderStatus !=
-                                              'failed' &&
-                                          controllerOrderModel.orderStatus !=
-                                              'canceled' &&
-                                          controllerOrderModel.orderStatus !=
-                                              'refunded' &&
-                                          orderController
-                                                  .orderModel!.customer?.id !=
-                                              null)
-                                      ? InkWell(
-                                          onTap: () async {
-                                            if (Get.find<ProfileController>()
-                                                        .profileModel!
-                                                        .subscription !=
-                                                    null &&
-                                                Get.find<ProfileController>()
-                                                        .profileModel!
-                                                        .subscription!
-                                                        .chat ==
-                                                    0 &&
-                                                Get.find<ProfileController>()
-                                                        .profileModel!
-                                                        .restaurants![0]
-                                                        .restaurantModel ==
-                                                    'subscription') {
-                                              showCustomSnackBar(
-                                                  'you_have_no_available_subscription'
-                                                      .tr);
-                                            } else {
-                                              _timer.cancel();
-                                              await Get.toNamed(
-                                                  RouteHelper.getChatRoute(
-                                                notificationBody:
-                                                    NotificationBodyModel(
-                                                  orderId: orderController
-                                                      .orderModel!.id,
-                                                  customerId: orderController
-                                                      .orderModel!.customer!.id,
-                                                ),
-                                                user: User(
-                                                  id: orderController
-                                                      .orderModel!.customer!.id,
-                                                  fName: orderController
-                                                      .orderModel!
-                                                      .customer!
-                                                      .fName,
-                                                  lName: orderController
-                                                      .orderModel!
-                                                      .customer!
-                                                      .lName,
-                                                  image: orderController
-                                                      .orderModel!
-                                                      .customer!
-                                                      .image,
-                                                ),
-                                              ));
-                                              _startApiCalling();
-                                            }
-                                          },
-                                          child: Container(
-                                            padding: const EdgeInsets.symmetric(
-                                                horizontal: Dimensions
-                                                    .paddingSizeDefault,
-                                                vertical: 7),
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(
-                                                      Dimensions.radiusDefault),
-                                              color: Theme.of(context)
-                                                  .primaryColor,
-                                            ),
-                                            child: Center(
-                                              child: Text('chat'.tr,
-                                                  style: robotoRegular.copyWith(
-                                                      fontSize: Dimensions
-                                                          .fontSizeSmall,
-                                                      color: Theme.of(context)
-                                                          .cardColor)),
-                                            ),
-                                          ),
-                                        )
-                                      : const SizedBox(),
-                                ]),
+                                // Row(children: [
+                                //   Text('customer_details'.tr,
+                                //       style: robotoMedium),
+                                //   order.isGuest!
+                                //       ? Text(' (${'guest_user'.tr})',
+                                //           style: robotoMedium.copyWith(
+                                //               color: Colors.green))
+                                //       : const SizedBox(),
+                                // ]),
+                                // const SizedBox(
+                                //     height: Dimensions.paddingSizeSmall),
+                                // Row(children: [
+                                //   ClipOval(
+                                //       child: CustomImageWidget(
+                                //     image: order.customer != null
+                                //         ? '${Get.find<SplashController>().configModel!.baseUrls!.customerImageUrl}/${order.customer!.image}'
+                                //         : '',
+                                //     height: 35,
+                                //     width: 35,
+                                //     fit: BoxFit.cover,
+                                //   )),
+                                //   const SizedBox(
+                                //       width: Dimensions.paddingSizeSmall),
+                                //   Expanded(
+                                //       child: order.deliveryAddress != null
+                                //           ? Column(
+                                //               crossAxisAlignment:
+                                //                   CrossAxisAlignment.start,
+                                //               children: [
+                                //                   Text(
+                                //                     order.deliveryAddress!
+                                //                         .contactPersonName!,
+                                //                     maxLines: 1,
+                                //                     overflow:
+                                //                         TextOverflow.ellipsis,
+                                //                     style:
+                                //                         robotoRegular.copyWith(
+                                //                             fontSize: Dimensions
+                                //                                 .fontSizeSmall),
+                                //                   ),
+                                //                   Text(
+                                //                     order.deliveryAddress!
+                                //                                 .address !=
+                                //                             null
+                                //                         ? order.deliveryAddress!
+                                //                             .address!
+                                //                         : '',
+                                //                     maxLines: 1,
+                                //                     overflow:
+                                //                         TextOverflow.ellipsis,
+                                //                     style:
+                                //                         robotoRegular.copyWith(
+                                //                             fontSize: Dimensions
+                                //                                 .fontSizeSmall,
+                                //                             color: Theme.of(
+                                //                                     context)
+                                //                                 .disabledColor),
+                                //                   ),
+                                //                   Wrap(children: [
+                                //                     (order.deliveryAddress
+                                //                                     ?.streetNumber !=
+                                //                                 null &&
+                                //                             order
+                                //                                 .deliveryAddress!
+                                //                                 .streetNumber!
+                                //                                 .isNotEmpty)
+                                //                         ? Text(
+                                //                             '${'street_number'.tr}: ${order.deliveryAddress!.streetNumber!}${(order.deliveryAddress?.house != null && order.deliveryAddress!.house!.isNotEmpty) ? ', ' : ' '}',
+                                //                             style: robotoRegular.copyWith(
+                                //                                 fontSize: Dimensions
+                                //                                     .fontSizeExtraSmall,
+                                //                                 color: Theme.of(
+                                //                                         context)
+                                //                                     .disabledColor),
+                                //                             maxLines: 1,
+                                //                             overflow:
+                                //                                 TextOverflow
+                                //                                     .ellipsis,
+                                //                           )
+                                //                         : const SizedBox(),
+                                //                     (order.deliveryAddress
+                                //                                     ?.house !=
+                                //                                 null &&
+                                //                             order
+                                //                                 .deliveryAddress!
+                                //                                 .house!
+                                //                                 .isNotEmpty)
+                                //                         ? Text(
+                                //                             '${'house'.tr}: ${order.deliveryAddress!.house!}${(order.deliveryAddress!.floor != null && order.deliveryAddress!.floor!.isNotEmpty) ? ', ' : ' '}',
+                                //                             style: robotoRegular.copyWith(
+                                //                                 fontSize: Dimensions
+                                //                                     .fontSizeExtraSmall,
+                                //                                 color: Theme.of(
+                                //                                         context)
+                                //                                     .disabledColor),
+                                //                             maxLines: 1,
+                                //                             overflow:
+                                //                                 TextOverflow
+                                //                                     .ellipsis,
+                                //                           )
+                                //                         : const SizedBox(),
+                                //                     (order.deliveryAddress
+                                //                                     ?.floor !=
+                                //                                 null &&
+                                //                             order
+                                //                                 .deliveryAddress!
+                                //                                 .floor!
+                                //                                 .isNotEmpty)
+                                //                         ? Text(
+                                //                             '${'floor'.tr}: ${order.deliveryAddress!.floor!}',
+                                //                             style: robotoRegular.copyWith(
+                                //                                 fontSize: Dimensions
+                                //                                     .fontSizeExtraSmall,
+                                //                                 color: Theme.of(
+                                //                                         context)
+                                //                                     .disabledColor),
+                                //                             maxLines: 1,
+                                //                             overflow:
+                                //                                 TextOverflow
+                                //                                     .ellipsis,
+                                //                           )
+                                //                         : const SizedBox(),
+                                //                   ]),
+                                //                 ])
+                                //           : Text('walking_customer'.tr,
+                                //               style: robotoMedium)),
+                                //   (order.orderType == 'take_away' &&
+                                //           (order.orderStatus == 'pending' ||
+                                //               order.orderStatus ==
+                                //                   'confirmed' ||
+                                //               order.orderStatus ==
+                                //                   'processing'))
+                                //       ? TextButton.icon(
+                                //           onPressed: () async {
+                                //             String url =
+                                //                 'https://www.google.com/maps/dir/?api=1&destination=${order.deliveryAddress?.latitude}'
+                                //                 ',${order.deliveryAddress?.longitude}&mode=d';
+                                //             if (await canLaunchUrlString(url)) {
+                                //               await launchUrlString(url,
+                                //                   mode: LaunchMode
+                                //                       .externalApplication);
+                                //             } else {
+                                //               showCustomSnackBar(
+                                //                   'unable_to_launch_google_map'
+                                //                       .tr);
+                                //             }
+                                //           },
+                                //           icon: const Icon(Icons.directions),
+                                //           label: Text('direction'.tr),
+                                //         )
+                                //       : const SizedBox(),
+                                //   const SizedBox(
+                                //       width: Dimensions.paddingSizeSmall),
+                                //   (controllerOrderModel.orderStatus !=
+                                //               'delivered' &&
+                                //           controllerOrderModel.orderStatus !=
+                                //               'failed' &&
+                                //           controllerOrderModel.orderStatus !=
+                                //               'canceled' &&
+                                //           controllerOrderModel.orderStatus !=
+                                //               'refunded' &&
+                                //           orderController
+                                //                   .orderModel!.customer?.id !=
+                                //               null)
+                                //       ? InkWell(
+                                //           onTap: () async {
+                                //             if (Get.find<ProfileController>()
+                                //                         .profileModel!
+                                //                         .subscription !=
+                                //                     null &&
+                                //                 Get.find<ProfileController>()
+                                //                         .profileModel!
+                                //                         .subscription!
+                                //                         .chat ==
+                                //                     0 &&
+                                //                 Get.find<ProfileController>()
+                                //                         .profileModel!
+                                //                         .restaurants![0]
+                                //                         .restaurantModel ==
+                                //                     'subscription') {
+                                //               showCustomSnackBar(
+                                //                   'you_have_no_available_subscription'
+                                //                       .tr);
+                                //             } else {
+                                //               _timer.cancel();
+                                //               await Get.toNamed(
+                                //                   RouteHelper.getChatRoute(
+                                //                 notificationBody:
+                                //                     NotificationBodyModel(
+                                //                   orderId: orderController
+                                //                       .orderModel!.id,
+                                //                   customerId: orderController
+                                //                       .orderModel!.customer!.id,
+                                //                 ),
+                                //                 user: User(
+                                //                   id: orderController
+                                //                       .orderModel!.customer!.id,
+                                //                   fName: orderController
+                                //                       .orderModel!
+                                //                       .customer!
+                                //                       .fName,
+                                //                   lName: orderController
+                                //                       .orderModel!
+                                //                       .customer!
+                                //                       .lName,
+                                //                   image: orderController
+                                //                       .orderModel!
+                                //                       .customer!
+                                //                       .image,
+                                //                 ),
+                                //               ));
+                                //               _startApiCalling();
+                                //             }
+                                //           },
+                                //           child: Container(
+                                //             padding: const EdgeInsets.symmetric(
+                                //                 horizontal: Dimensions
+                                //                     .paddingSizeDefault,
+                                //                 vertical: 7),
+                                //             decoration: BoxDecoration(
+                                //               borderRadius:
+                                //                   BorderRadius.circular(
+                                //                       Dimensions.radiusDefault),
+                                //               color: Theme.of(context)
+                                //                   .primaryColor,
+                                //             ),
+                                //             child: Center(
+                                //               child: Text('chat'.tr,
+                                //                   style: robotoRegular.copyWith(
+                                //                       fontSize: Dimensions
+                                //                           .fontSizeSmall,
+                                //                       color: Theme.of(context)
+                                //                           .cardColor)),
+                                //             ),
+                                //           ),
+                                //         )
+                                //       : const SizedBox(),
+                                // ]),
                                 const SizedBox(
                                     height: Dimensions.paddingSizeLarge),
                                 order.deliveryMan != null
