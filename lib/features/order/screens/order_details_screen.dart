@@ -1,19 +1,21 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:dotted_border/dotted_border.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:photo_view/photo_view.dart';
 import 'package:stackfood_multivendor_restaurant/common/widgets/confirmation_dialog_widget.dart';
 import 'package:stackfood_multivendor_restaurant/common/widgets/custom_app_bar_widget.dart';
 import 'package:stackfood_multivendor_restaurant/common/widgets/custom_button_widget.dart';
 import 'package:stackfood_multivendor_restaurant/common/widgets/custom_image_widget.dart';
 import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
 import 'package:stackfood_multivendor_restaurant/common/widgets/input_dialog_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/language/controllers/localization_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/controllers/order_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
 import 'package:stackfood_multivendor_restaurant/features/chat/domain/models/conversation_model.dart';
 import 'package:stackfood_multivendor_restaurant/features/chat/domain/models/notification_body_model.dart';
+import 'package:stackfood_multivendor_restaurant/features/language/controllers/localization_controller.dart';
+import 'package:stackfood_multivendor_restaurant/features/order/controllers/order_controller.dart';
 import 'package:stackfood_multivendor_restaurant/features/order/domain/models/order_details_model.dart';
 import 'package:stackfood_multivendor_restaurant/features/order/domain/models/order_model.dart';
 import 'package:stackfood_multivendor_restaurant/features/order/screens/invoice_print_screen.dart';
@@ -25,6 +27,9 @@ import 'package:stackfood_multivendor_restaurant/features/order/widgets/dialogue
 import 'package:stackfood_multivendor_restaurant/features/order/widgets/order_product_widget.dart';
 import 'package:stackfood_multivendor_restaurant/features/order/widgets/slider_button_widget.dart';
 import 'package:stackfood_multivendor_restaurant/features/order/widgets/verify_delivery_sheet_widget.dart';
+import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
+import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
+import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
 import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
 import 'package:stackfood_multivendor_restaurant/helper/price_converter_helper.dart';
 import 'package:stackfood_multivendor_restaurant/helper/responsive_helper.dart';
@@ -32,10 +37,6 @@ import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
 import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
 import 'package:stackfood_multivendor_restaurant/util/images.dart';
 import 'package:stackfood_multivendor_restaurant/util/styles.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:photo_view/photo_view.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class OrderDetailsScreen extends StatefulWidget {
@@ -1392,17 +1393,17 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                                         order.additionalCharge! > 0)
                                     ? const SizedBox(height: 10)
                                     : const SizedBox(),
-                                Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Text('delivery_fee'.tr,
-                                          style: robotoRegular),
-                                      Text(
-                                          '(+) ${PriceConverter.convertPrice(deliveryCharge)}',
-                                          style: robotoRegular,
-                                          textDirection: TextDirection.ltr),
-                                    ]),
+                                // Row(
+                                //     mainAxisAlignment:
+                                //         MainAxisAlignment.spaceBetween,
+                                //     children: [
+                                //       Text('delivery_fee'.tr,
+                                //           style: robotoRegular),
+                                //       Text(
+                                //           '(+) ${PriceConverter.convertPrice(deliveryCharge)}',
+                                //           style: robotoRegular,
+                                //           textDirection: TextDirection.ltr),
+                                //     ]),
                                 Padding(
                                   padding: const EdgeInsets.symmetric(
                                       vertical: Dimensions.paddingSizeSmall),
@@ -1513,7 +1514,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                                                 )),
                                             Text(
                                               PriceConverter.convertPrice(
-                                                  total),
+                                                  subTotal),
                                               textDirection: TextDirection.ltr,
                                               style: robotoMedium.copyWith(
                                                   fontSize:
