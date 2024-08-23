@@ -5,7 +5,7 @@
   "password": "Password",
   "confirm_password": "Confirm Password",
   "remember_me": "Remember me",
-  "forgot_password": "Forgot password",
+  "forgot_password": "Forgot password?",
   "phone": "Phone",
   "enter_email_address": "Enter your email address",
   "enter_a_valid_email_address": "Enter a valid email address",
