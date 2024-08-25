@@ -78,6 +78,8 @@ class OrderModel {
   int? subscriptionId;
   String? unavailableItemNote;
   String? deliveryInstruction;
+  String? totalDeliveryTime;
+  String? couponCode;
 
   // SubscriptionModel subscription;
   double? additionalCharge;
@@ -140,6 +142,8 @@ class OrderModel {
     this.isGuest,
     this.extraPackagingAmount,
     this.referrerBonusAmount,
+    this.totalDeliveryTime,
+    this.couponCode,
   });
 
   OrderModel.fromJson(Map<String, dynamic> json) {
@@ -193,6 +197,8 @@ class OrderModel {
     subscriptionId = json['subscription_id'];
     unavailableItemNote = json['unavailable_item_note'];
     deliveryInstruction = json['delivery_instruction'];
+    totalDeliveryTime = json['total_delivery_time'];
+    couponCode = json['coupon_code'];
     // subscription = json['subscription'] != null ? new SubscriptionModel.fromJson(json['subscription']) : null;
     additionalCharge = json['additional_charge']?.toDouble() ?? 0;
     if (json['order_proof'] != null && json['order_proof'] != "null") {
@@ -249,6 +255,8 @@ class OrderModel {
     data['delivered'] = delivered;
     data['canceled'] = canceled;
     data['refund_requested'] = refundRequested;
+    data['total_delivery_time'] = totalDeliveryTime;
+    data['coupon_code'] = couponCode;
     data['refunded'] = refunded;
     if (deliveryAddress != null) {
       data['delivery_address'] = deliveryAddress!.toJson();

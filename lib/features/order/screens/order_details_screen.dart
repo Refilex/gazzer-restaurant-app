@@ -234,7 +234,8 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                                             controllerOrderModel.orderStatus !=
                                                 'refunded' &&
                                             controllerOrderModel.orderStatus !=
-                                                'refund_request_canceled')
+                                                'refund_request_canceled' &&
+                                            order!.totalDeliveryTime != null)
                                         ? Column(children: [
                                             ClipRRect(
                                                 borderRadius:
@@ -258,39 +259,12 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                                                 height: Dimensions
                                                     .paddingSizeExtraSmall),
                                             Center(
-                                              child: Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.min,
-                                                  children: [
-                                                    Text(
-                                                      DateConverter.differenceInMinute(
-                                                                  restaurant
-                                                                      .deliveryTime,
-                                                                  controllerOrderModel
-                                                                      .createdAt,
-                                                                  controllerOrderModel
-                                                                      .processingTime,
-                                                                  controllerOrderModel
-                                                                      .scheduleAt) <
-                                                              5
-                                                          ? '1 - 5'
-                                                          : '${DateConverter.differenceInMinute(restaurant.deliveryTime, controllerOrderModel.createdAt, controllerOrderModel.processingTime, controllerOrderModel.scheduleAt) - 5} '
-                                                              '- ${DateConverter.differenceInMinute(restaurant.deliveryTime, controllerOrderModel.createdAt, controllerOrderModel.processingTime, controllerOrderModel.scheduleAt)}',
-                                                      style: robotoBold.copyWith(
-                                                          fontSize: Dimensions
-                                                              .fontSizeExtraLarge),
-                                                    ),
-                                                    const SizedBox(
-                                                        width: Dimensions
-                                                            .paddingSizeExtraSmall),
-                                                    Text('min'.tr,
-                                                        style: robotoMedium.copyWith(
-                                                            fontSize: Dimensions
-                                                                .fontSizeLarge,
-                                                            color: Theme.of(
-                                                                    context)
-                                                                .primaryColor)),
-                                                  ]),
+                                              child: Text(
+                                                order.totalDeliveryTime!,
+                                                style: robotoBold.copyWith(
+                                                    fontSize: Dimensions
+                                                        .fontSizeOverLarge),
+                                              ),
                                             ),
                                             const SizedBox(
                                                 height: Dimensions
