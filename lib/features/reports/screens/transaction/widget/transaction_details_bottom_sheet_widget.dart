@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:stackfood_multivendor_restaurant/features/reports/domain/models/report_model.dart';
 import 'package:stackfood_multivendor_restaurant/features/reports/widgets/title_with_amount_widget.dart';
 import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
 import 'package:stackfood_multivendor_restaurant/util/styles.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class TransactionDetailsBottomSheetWidget extends StatelessWidget {
   final OrderTransactions orderTransactions;
@@ -102,10 +102,10 @@ class TransactionDetailsBottomSheetWidget extends StatelessWidget {
                 TitleWithAmountWidget(
                     title: 'vat_tax'.tr, amount: orderTransactions.vat ?? 0),
                 const SizedBox(height: Dimensions.paddingSizeDefault),
-                TitleWithAmountWidget(
-                    title: 'delivery_charge'.tr,
-                    amount: orderTransactions.deliveryCharge ?? 0),
-                const SizedBox(height: Dimensions.paddingSizeDefault),
+                // TitleWithAmountWidget(
+                //     title: 'delivery_charge'.tr,
+                //     amount: orderTransactions.deliveryCharge ?? 0),
+                // const SizedBox(height: Dimensions.paddingSizeDefault),
                 TitleWithAmountWidget(
                     title: 'order_amount'.tr,
                     amount: orderTransactions.orderAmount ?? 0),
