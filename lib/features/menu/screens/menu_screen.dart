@@ -1,12 +1,12 @@
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:stackfood_multivendor_restaurant/features/menu/domain/models/menu_model.dart';
 import 'package:stackfood_multivendor_restaurant/features/menu/widgets/menu_button_widget.dart';
+import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
+import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
 import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
 import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
 import 'package:stackfood_multivendor_restaurant/util/images.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
@@ -25,22 +25,22 @@ class MenuScreen extends StatelessWidget {
             .restaurants![0]
             .foodSection!,
       ),
-      MenuModel(
-          icon: Images.campaign,
-          title: 'campaign'.tr,
-          route: RouteHelper.getCampaignRoute()),
+      // MenuModel(
+      //     icon: Images.campaign,
+      //     title: 'campaign'.tr,
+      //     route: RouteHelper.getCampaignRoute()),
       MenuModel(
           icon: Images.addon,
           title: 'addons'.tr,
           route: RouteHelper.getAddonsRoute()),
-      MenuModel(
-          icon: Images.categories,
-          title: 'categories'.tr,
-          route: RouteHelper.getCategoriesRoute()),
-      MenuModel(
-          icon: Images.coupon,
-          title: 'coupon'.tr,
-          route: RouteHelper.getCouponRoute()),
+      // MenuModel(
+      //     icon: Images.categories,
+      //     title: 'categories'.tr,
+      //     route: RouteHelper.getCategoriesRoute()),
+      // MenuModel(
+      //     icon: Images.coupon,
+      //     title: 'coupon'.tr,
+      //     route: RouteHelper.getCouponRoute()),
       MenuModel(
           icon: Images.review,
           title: 'reviews'.tr,
