@@ -26,7 +26,18 @@ Future<void> main() async {
   }
   setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  if (GetPlatform.isAndroid) {
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(
+        apiKey: 'AIzaSyCfxGdnL_KhgbNDY7mFQh-tHHBqIaxisYw',
+        appId: '1:671839887516:android:d4948b23c25f791f798d59',
+        messagingSenderId: '671839887516',
+        projectId: 'gazzer-app',
+      ),
+    );
+  } else {
+    await Firebase.initializeApp();
+  }
   Map<String, Map<String, String>> languages = await di.init();
 
   NotificationBodyModel? body;
