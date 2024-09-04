@@ -9,6 +9,8 @@ import 'package:just_the_tooltip/just_the_tooltip.dart';
 
 class TransactionStatusCardWidget extends StatelessWidget {
   final bool isCompleted;
+  final bool isCompletedCash;
+  final bool isCompletedDigital;
   final bool isOnHold;
   final double amount;
   final JustTheController? completedToolTip;
@@ -18,6 +20,8 @@ class TransactionStatusCardWidget extends StatelessWidget {
   const TransactionStatusCardWidget(
       {super.key,
       this.isCompleted = false,
+      this.isCompletedCash = false,
+      this.isCompletedDigital = false,
       this.isOnHold = false,
       required this.amount,
       this.completedToolTip,
@@ -151,11 +155,17 @@ class TransactionStatusCardWidget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 23),
               child: Text(
-                isCompleted
-                    ? "completed_transactions".tr
-                    : isOnHold
-                        ? "on_hold_transactions".tr
-                        : "canceled_transactions".tr,
+                (() {
+                  if (isCompleted) {
+                    if (isCompletedCash) return "completed_transactions_cash".tr;
+                    if (isCompletedDigital) return "completed_transactions_digital".tr;
+                    return "completed_transactions".tr;
+                  } else if (isOnHold) {
+                    return "on_hold_transactions".tr;
+                  } else {
+                    return "canceled_transactions".tr;
+                  }
+                })(),
                 textAlign: TextAlign.center,
                 style: robotoRegular.copyWith(
                   fontSize: Dimensions.fontSizeSmall,

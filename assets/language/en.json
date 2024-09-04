@@ -665,6 +665,8 @@
   "upload_pdf": "Upload PDF",
   "upload_file": "Upload File",
   "completed_transactions": "Completed Transactions",
+  "completed_transactions_cash": "Completed Cash Transactions",
+  "completed_transactions_digital": "Completed Digital Transactions",
   "on_hold_transactions": "On-Hold Transactions",
   "canceled_transactions": "Cancelled Transactions",
   "additional_charge": "Additional Charge",

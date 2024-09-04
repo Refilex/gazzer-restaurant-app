@@ -33,7 +33,15 @@ class ReportController extends GetxController implements GetxService {
 
   double? _completedTransactions;
 
+  double? _completedTransactionsCash;
+
+  double? _completedTransactionsDigital;
+
   double? get completedTransactions => _completedTransactions;
+
+  double? get completedTransactionsCash => _completedTransactionsCash;
+
+  double? get completedTransactionsDigital => _completedTransactionsDigital;
 
   List<OrderTransactions>? _orderTransactions;
 
@@ -105,6 +113,8 @@ class ReportController extends GetxController implements GetxService {
         _onHold = transactionReportModel.onHold;
         _canceled = transactionReportModel.canceled;
         _completedTransactions = transactionReportModel.completedTransactions;
+        _completedTransactionsDigital = transactionReportModel.completedTransactionsDigital;
+        _completedTransactionsCash = transactionReportModel.completedTransactionsCash;
         if (offset == '1') {
           _orderTransactions = [];
         }

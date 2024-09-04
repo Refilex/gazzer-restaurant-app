@@ -651,6 +651,8 @@
   "upload_pdf": "تحميل PDF",
   "upload_file": "تحميل الملف",
   "completed_transactions": "المعاملات المكتملة",
+  "completed_transactions_cash": "المعاملات النقدية",
+  "completed_transactions_digital": "المعاملات الرقمية",
   "on_hold_transactions": "على المعاملات الاحتياطية",
   "canceled_transactions": "المعاملات الملغاة",
   "additional_charge": "رسوم إضافية",
