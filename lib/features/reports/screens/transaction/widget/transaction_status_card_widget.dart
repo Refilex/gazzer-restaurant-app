@@ -1,11 +1,10 @@
-import 'package:intl/intl.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:just_the_tooltip/just_the_tooltip.dart';
 import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
 import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
 import 'package:stackfood_multivendor_restaurant/util/images.dart';
 import 'package:stackfood_multivendor_restaurant/util/styles.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:just_the_tooltip/just_the_tooltip.dart';
 
 class TransactionStatusCardWidget extends StatelessWidget {
   final bool isCompleted;
@@ -140,7 +139,7 @@ class TransactionStatusCardWidget extends StatelessWidget {
             const SizedBox(height: Dimensions.paddingSizeDefault),
             Text(
               '${isRightSide ? '' : '${Get.find<SplashController>().configModel!.currencySymbol!} '}'
-              '${NumberFormat.compact().format(amount)}'
+              '$amount'
               '${isRightSide ? ' ${Get.find<SplashController>().configModel!.currencySymbol!}' : ''}',
               style: robotoBold.copyWith(
                 fontSize: 20,
