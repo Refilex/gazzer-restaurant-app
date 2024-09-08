@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:stackfood_multivendor_restaurant/common/widgets/confirmation_dialog_widget.dart';
 import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
 import 'package:stackfood_multivendor_restaurant/features/auth/controllers/auth_controller.dart';
@@ -7,8 +9,6 @@ import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
 import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
 import 'package:stackfood_multivendor_restaurant/util/images.dart';
 import 'package:stackfood_multivendor_restaurant/util/styles.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class MenuButtonWidget extends StatelessWidget {
   final MenuModel menu;
@@ -56,7 +56,7 @@ class MenuButtonWidget extends StatelessWidget {
       },
       child: Column(children: [
         Container(
-          height: size - (size * 0.2),
+          height: size - (size * 0.3),
           padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
           margin: const EdgeInsets.symmetric(
               horizontal: Dimensions.paddingSizeSmall),
