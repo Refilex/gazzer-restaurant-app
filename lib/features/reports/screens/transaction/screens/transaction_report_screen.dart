@@ -116,7 +116,7 @@ class _TransactionReportScreenState extends State<TransactionReportScreen> {
                                   width: Dimensions.paddingSizeDefault),
                               TransactionStatusCardWidget(
                                 isCompleted: true,
-                                isCompletedDigital: true,
+                                isTotalAdminCommission: true,
                                 amount: reportController
                                         .totalAdminCommission ??
                                     0,
