@@ -51,7 +51,7 @@ class SignInScreen extends StatelessWidget {
                         style: robotoBlack.copyWith(fontSize: 30)),
                     const SizedBox(height: Dimensions.paddingSizeExtraSmall),
                     Text(
-                      'only_for_restaurant_owner'.tr,
+                      'only_for_merchant'.tr,
                       textAlign: TextAlign.center,
                       style: robotoRegular.copyWith(
                           fontSize: Dimensions.fontSizeExtraSmall,

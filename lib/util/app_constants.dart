@@ -2,7 +2,7 @@ import 'package:stackfood_multivendor_restaurant/features/language/domain/models
 import 'package:stackfood_multivendor_restaurant/util/images.dart';
 
 class AppConstants {
-  static const String appName = 'Gazzer Restaurant';
+  static const String appName = 'Gazzer Vendor';
   static const double appVersion = 7.6;
 
   static const String baseUrl = 'https://carrot.refilex.com';

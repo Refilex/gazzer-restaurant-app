@@ -231,7 +231,7 @@
   "swipe_to_confirm_order": "مرر لتأكيد الطلب",
   "are_you_sure_to_confirm": "هل أنت متأكد من التأكيد؟",
   "you_want_to_confirm_this_order": "هل تريد تأكيد هذا الطلب؟",
-  "only_for_restaurant_owner": "فقط لصاحب المطعم",
+  "only_for_merchant": "خاص بالتاجر فقط",
   "all_foods": "جميع الأطعمة",
   "reviews": "المراجعات",
   "no_review_found": "لم يتم العثور على مراجعة",

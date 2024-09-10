@@ -27,7 +27,7 @@
     </queries>
 
     <application
-        android:label="Gazzer Restaurant"
+        android:label="Gazzer Vendor"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
