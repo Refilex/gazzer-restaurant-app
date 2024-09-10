@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/reports/domain/services/report_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/reports/domain/models/report_model.dart';
-import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
+import 'package:gazzer_vendorapp/features/reports/domain/services/report_service_interface.dart';
+import 'package:gazzer_vendorapp/features/reports/domain/models/report_model.dart';
+import 'package:gazzer_vendorapp/helper/date_converter_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/features/reports/domain/models/report_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/reports/widgets/title_with_amount_widget.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/features/reports/domain/models/report_model.dart';
+import 'package:gazzer_vendorapp/features/reports/widgets/title_with_amount_widget.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

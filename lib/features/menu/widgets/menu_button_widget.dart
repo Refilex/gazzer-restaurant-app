@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/confirmation_dialog_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/controllers/auth_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/menu/domain/models/menu_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/menu/widgets/profile_image_widget.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/common/widgets/confirmation_dialog_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/auth/controllers/auth_controller.dart';
+import 'package:gazzer_vendorapp/features/menu/domain/models/menu_model.dart';
+import 'package:gazzer_vendorapp/features/menu/widgets/profile_image_widget.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class MenuButtonWidget extends StatelessWidget {
   final MenuModel menu;

@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/common/models/config_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/controllers/restaurant_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/domain/services/splash_service_interface.dart';
+import 'package:gazzer_vendorapp/common/models/config_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/controllers/restaurant_controller.dart';
+import 'package:gazzer_vendorapp/features/splash/domain/services/splash_service_interface.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 

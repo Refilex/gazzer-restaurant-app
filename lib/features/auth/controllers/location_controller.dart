@@ -1,10 +1,10 @@
 import 'dart:convert';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/address_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/place_details_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/prediction_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/zone_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/zone_response_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/services/location_service_interface.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/address_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/place_details_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/prediction_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/zone_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/zone_response_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/services/location_service_interface.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';

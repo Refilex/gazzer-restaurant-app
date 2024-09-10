@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/widgets/payment_method_bottom_sheet_widget.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/features/business/widgets/payment_method_bottom_sheet_widget.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 
 void customShowModalBottomSheet() {
   showModalBottomSheet(

@@ -1,5 +1,5 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/rating_bar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/common/widgets/rating_bar_widget.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 import 'package:flutter/material.dart';
 
 class ProductShimmerWidget extends StatelessWidget {

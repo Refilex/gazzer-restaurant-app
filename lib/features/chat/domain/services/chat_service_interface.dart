@@ -1,5 +1,5 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/helper/user_type.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/helper/user_type.dart';
 
 abstract class ChatServiceInterface {
   Future<dynamic> getConversationList(int offset);

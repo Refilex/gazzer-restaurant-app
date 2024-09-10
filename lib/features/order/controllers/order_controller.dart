@@ -1,15 +1,15 @@
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/services/order_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/update_status_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/order_cancellation_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/order_details_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/order_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/running_order_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/subscription/domain/models/subscription_model.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/features/order/domain/services/order_service_interface.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/update_status_model.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/order_cancellation_body_model.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/order_details_model.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/order_model.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/running_order_model.dart';
+import 'package:gazzer_vendorapp/features/subscription/domain/models/subscription_model.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 

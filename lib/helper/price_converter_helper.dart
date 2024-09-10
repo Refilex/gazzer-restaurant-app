@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
 import 'package:get/get.dart';
 
 class PriceConverter {

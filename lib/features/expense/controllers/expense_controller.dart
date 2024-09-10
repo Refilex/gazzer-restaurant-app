@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/features/expense/domain/services/expense_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/expense/domain/models/expense_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
+import 'package:gazzer_vendorapp/features/expense/domain/services/expense_service_interface.dart';
+import 'package:gazzer_vendorapp/features/expense/domain/models/expense_model.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/helper/date_converter_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

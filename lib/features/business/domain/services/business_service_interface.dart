@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/features/business/domain/models/business_plan_model.dart';
+import 'package:gazzer_vendorapp/features/business/domain/models/business_plan_model.dart';
 
 abstract class BusinessServiceInterface {
   Future<dynamic> getPackageList();

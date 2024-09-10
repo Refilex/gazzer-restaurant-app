@@ -1,9 +1,9 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_button_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/controllers/payment_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/bank_info_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/widgets/bank_field_widget.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_button_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/payment/controllers/payment_controller.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/bank_info_body_model.dart';
+import 'package:gazzer_vendorapp/features/payment/widgets/bank_field_widget.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

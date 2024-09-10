@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/addon/domain/repositories/addon_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/addon/domain/services/addon_service_interface.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/features/addon/domain/repositories/addon_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/addon/domain/services/addon_service_interface.dart';
 
 class AddonService implements AddonServiceInterface {
   final AddonRepositoryInterface addonRepoInterface;

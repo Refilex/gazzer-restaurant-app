@@ -1,11 +1,11 @@
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/disbursement/domain/repositories/disbursement_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/disbursement/domain/models/disbursement_method_model.dart'
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/disbursement/domain/repositories/disbursement_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/disbursement/domain/models/disbursement_method_model.dart'
     as disburse;
-import 'package:stackfood_multivendor_restaurant/features/disbursement/domain/models/disbursement_report_model.dart'
+import 'package:gazzer_vendorapp/features/disbursement/domain/models/disbursement_report_model.dart'
     as report;
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 
 class DisbursementRepository implements DisbursementRepositoryInterface {

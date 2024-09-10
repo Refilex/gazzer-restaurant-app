@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_dropdown_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_text_form_field_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/controllers/restaurant_controller.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_dropdown_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_text_form_field_widget.dart';
+import 'package:gazzer_vendorapp/features/restaurant/controllers/restaurant_controller.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class StackSectionWidget extends StatelessWidget {
   final RestaurantController restaurantController;

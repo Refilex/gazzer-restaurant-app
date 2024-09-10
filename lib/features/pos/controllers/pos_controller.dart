@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/features/pos/domain/services/pos_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/pos/domain/models/cart_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
-import 'package:stackfood_multivendor_restaurant/helper/custom_print_helper.dart';
+import 'package:gazzer_vendorapp/features/pos/domain/services/pos_service_interface.dart';
+import 'package:gazzer_vendorapp/features/pos/domain/models/cart_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/helper/custom_print_helper.dart';
 import 'package:get/get.dart';
 
 class PosController extends GetxController implements GetxService {

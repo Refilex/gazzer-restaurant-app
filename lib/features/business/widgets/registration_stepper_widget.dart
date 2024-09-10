@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/features/business/widgets/registration_stepper.dart';
+import 'package:gazzer_vendorapp/features/business/widgets/registration_stepper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

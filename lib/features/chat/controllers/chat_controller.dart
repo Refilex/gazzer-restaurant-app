@@ -1,10 +1,10 @@
-import 'package:stackfood_multivendor_restaurant/features/chat/domain/services/chat_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/chat/domain/models/notification_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/chat/domain/models/conversation_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/chat/domain/models/message_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/helper/user_type.dart';
+import 'package:gazzer_vendorapp/features/chat/domain/services/chat_service_interface.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/chat/domain/models/notification_body_model.dart';
+import 'package:gazzer_vendorapp/features/chat/domain/models/conversation_model.dart';
+import 'package:gazzer_vendorapp/features/chat/domain/models/message_model.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/helper/user_type.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 

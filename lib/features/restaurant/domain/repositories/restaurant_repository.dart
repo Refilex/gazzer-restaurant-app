@@ -1,14 +1,14 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/cuisine_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/review_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/repositories/restaurant_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/cuisine_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/review_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/repositories/restaurant_repository_interface.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
 
 class RestaurantRepository implements RestaurantRepositoryInterface {
   final ApiClient apiClient;

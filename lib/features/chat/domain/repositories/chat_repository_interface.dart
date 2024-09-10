@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/helper/user_type.dart';
-import 'package:stackfood_multivendor_restaurant/interface/repository_interface.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/helper/user_type.dart';
+import 'package:gazzer_vendorapp/interface/repository_interface.dart';
 
 abstract class ChatRepositoryInterface implements RepositoryInterface {
   Future<dynamic> getConversationList(int offset);

@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/repositories/forgot_password_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/services/forgot_password_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/repositories/forgot_password_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/services/forgot_password_service_interface.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
 
 class ForgotPasswordService implements ForgotPasswordServiceInterface {
   final ForgotPasswordRepositoryInterface forgotPasswordRepositoryInterface;

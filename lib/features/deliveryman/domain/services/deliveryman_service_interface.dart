@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/models/delivery_man_model.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/models/delivery_man_model.dart';
 import 'package:image_picker/image_picker.dart';
 
 abstract class DeliverymanServiceInterface {

@@ -1,5 +1,5 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/update_status_model.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/update_status_model.dart';
 
 abstract class OrderServiceInterface {
   Future<dynamic> getOrderDetails(int orderID);

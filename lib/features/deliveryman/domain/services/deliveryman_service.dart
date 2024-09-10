@@ -1,9 +1,9 @@
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/models/delivery_man_list_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/models/delivery_man_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/repositories/deliveryman_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/services/deliveryman_service_interface.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/models/delivery_man_list_model.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/models/delivery_man_model.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/repositories/deliveryman_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/services/deliveryman_service_interface.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/review_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/review_model.dart';
 
 class DeliverymanService implements DeliverymanServiceInterface {
   final DeliverymanRepositoryInterface deliverymanRepositoryInterface;

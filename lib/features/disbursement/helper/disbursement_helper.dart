@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/features/disbursement/controllers/disbursement_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/disbursement/widgets/withdraw_method_attention_dialog_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/features/disbursement/controllers/disbursement_controller.dart';
+import 'package:gazzer_vendorapp/features/disbursement/widgets/withdraw_method_attention_dialog_widget.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

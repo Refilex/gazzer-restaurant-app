@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/interface/repository_interface.dart';
+import 'package:gazzer_vendorapp/interface/repository_interface.dart';
 
 abstract class ReportRepositoryInterface implements RepositoryInterface {
   Future<dynamic> getTransactionReportList(

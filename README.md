@@ -1,4 +1,4 @@
-# stackfood_multivendor_restaurant
+# gazzer_vendorapp
 
 A new Flutter application.
 

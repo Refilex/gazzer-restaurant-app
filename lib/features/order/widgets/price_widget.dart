@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 import 'package:flutter/material.dart';
 
 class PriceWidget extends StatelessWidget {

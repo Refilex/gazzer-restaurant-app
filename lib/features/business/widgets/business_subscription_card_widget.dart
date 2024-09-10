@@ -1,11 +1,11 @@
-import 'package:stackfood_multivendor_restaurant/features/business/controllers/business_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/domain/models/package_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/widgets/card_paint_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/widgets/curve_clipper_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/widgets/package_widget.dart';
-import 'package:stackfood_multivendor_restaurant/helper/price_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/features/business/controllers/business_controller.dart';
+import 'package:gazzer_vendorapp/features/business/domain/models/package_model.dart';
+import 'package:gazzer_vendorapp/features/business/widgets/card_paint_widget.dart';
+import 'package:gazzer_vendorapp/features/business/widgets/curve_clipper_widget.dart';
+import 'package:gazzer_vendorapp/features/business/widgets/package_widget.dart';
+import 'package:gazzer_vendorapp/helper/price_converter_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

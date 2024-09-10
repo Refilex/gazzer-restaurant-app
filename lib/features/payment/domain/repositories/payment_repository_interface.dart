@@ -1,5 +1,5 @@
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/bank_info_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/interface/repository_interface.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/bank_info_body_model.dart';
+import 'package:gazzer_vendorapp/interface/repository_interface.dart';
 
 abstract class PaymentRepositoryInterface implements RepositoryInterface {
   Future<dynamic> updateBankInfo(BankInfoBodyModel bankInfoBody);

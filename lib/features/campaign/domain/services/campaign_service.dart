@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/campaign/domain/models/campaign_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/campaign/domain/repositories/campaign_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/campaign/domain/services/campaign_service_interface.dart';
+import 'package:gazzer_vendorapp/features/campaign/domain/models/campaign_model.dart';
+import 'package:gazzer_vendorapp/features/campaign/domain/repositories/campaign_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/campaign/domain/services/campaign_service_interface.dart';
 
 class CampaignService implements CampaignServiceInterface {
   final CampaignRepositoryInterface campaignRepositoryInterface;

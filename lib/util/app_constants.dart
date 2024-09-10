@@ -1,5 +1,5 @@
-import 'package:stackfood_multivendor_restaurant/features/language/domain/models/language_model.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
+import 'package:gazzer_vendorapp/features/language/domain/models/language_model.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
 
 class AppConstants {
   static const String appName = 'Gazzer Vendor';

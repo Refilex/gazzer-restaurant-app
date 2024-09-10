@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/coupon/domain/models/coupon_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/coupon/domain/repositories/coupon_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/coupon/domain/services/coupon_service_interface.dart';
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/features/coupon/domain/models/coupon_body_model.dart';
+import 'package:gazzer_vendorapp/features/coupon/domain/repositories/coupon_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/coupon/domain/services/coupon_service_interface.dart';
 
 class CouponService implements CouponServiceInterface {
   final CouponRepositoryInterface couponRepositoryInterface;

@@ -1,12 +1,12 @@
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/controllers/business_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/domain/models/package_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/subscription/domain/services/subscription_service_interface.dart';
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/business/controllers/business_controller.dart';
+import 'package:gazzer_vendorapp/features/business/domain/models/package_model.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/features/subscription/domain/services/subscription_service_interface.dart';
 import 'package:get/get.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
 
 class SubscriptionController extends GetxController implements GetxService {
   final SubscriptionServiceInterface subscriptionServiceInterface;

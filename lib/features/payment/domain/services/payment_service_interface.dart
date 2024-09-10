@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/bank_info_body_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/bank_info_body_model.dart';
 
 abstract class PaymentServiceInterface {
   Future<dynamic> getWithdrawList();
