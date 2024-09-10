@@ -667,6 +667,7 @@
   "completed_transactions": "Completed Transactions",
   "completed_transactions_cash": "Completed Cash Transactions",
   "completed_transactions_digital": "Completed Digital Transactions",
+  "total_admin_commission": "Total Admin Commission",
   "on_hold_transactions": "On-Hold Transactions",
   "canceled_transactions": "Cancelled Transactions",
   "additional_charge": "Additional Charge",

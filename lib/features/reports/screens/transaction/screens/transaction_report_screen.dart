@@ -115,6 +115,16 @@ class _TransactionReportScreenState extends State<TransactionReportScreen> {
                               const SizedBox(
                                   width: Dimensions.paddingSizeDefault),
                               TransactionStatusCardWidget(
+                                isCompleted: true,
+                                isCompletedDigital: true,
+                                amount: reportController
+                                        .totalAdminCommission ??
+                                    0,
+                                completedToolTip: completedToolTip,
+                              ),
+                              const SizedBox(
+                                  width: Dimensions.paddingSizeDefault),
+                              TransactionStatusCardWidget(
                           isOnHold: true,
                           amount: reportController.onHold ?? 0,
                           onHoldToolTip: onHoldToolTip,

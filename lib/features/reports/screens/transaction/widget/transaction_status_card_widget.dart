@@ -10,6 +10,7 @@ class TransactionStatusCardWidget extends StatelessWidget {
   final bool isCompleted;
   final bool isCompletedCash;
   final bool isCompletedDigital;
+  final bool isTotalAdminCommission;
   final bool isOnHold;
   final double amount;
   final JustTheController? completedToolTip;
@@ -21,6 +22,7 @@ class TransactionStatusCardWidget extends StatelessWidget {
       this.isCompleted = false,
       this.isCompletedCash = false,
       this.isCompletedDigital = false,
+      this.isTotalAdminCommission = false,
       this.isOnHold = false,
       required this.amount,
       this.completedToolTip,
@@ -158,6 +160,8 @@ class TransactionStatusCardWidget extends StatelessWidget {
                   if (isCompleted) {
                     if (isCompletedCash) return "completed_transactions_cash".tr;
                     if (isCompletedDigital) return "completed_transactions_digital".tr;
+                    if (isTotalAdminCommission) return "total_admin_commission".tr;
+                    
                     return "completed_transactions".tr;
                   } else if (isOnHold) {
                     return "on_hold_transactions".tr;

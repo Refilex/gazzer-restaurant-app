@@ -653,6 +653,7 @@
   "completed_transactions": "المعاملات المكتملة",
   "completed_transactions_cash": "المعاملات النقدية",
   "completed_transactions_digital": "المعاملات الرقمية",
+  "total_admin_commission": "اجمالي العمولات",
   "on_hold_transactions": "على المعاملات الاحتياطية",
   "canceled_transactions": "المعاملات الملغاة",
   "additional_charge": "رسوم إضافية",
