@@ -123,10 +123,6 @@ class TransactionDetailsBottomSheetWidget extends StatelessWidget {
                     amount: orderTransactions.adminCommission ?? 0),
                 const SizedBox(height: Dimensions.paddingSizeDefault),
                 TitleWithAmountWidget(
-                    title: 'commission_on_delivery_charge'.tr,
-                    amount: orderTransactions.commissionOnDeliveryCharge ?? 0),
-                const SizedBox(height: Dimensions.paddingSizeDefault),
-                TitleWithAmountWidget(
                     title: 'restaurant_net_income'.tr,
                     amount: orderTransactions.restaurantNetIncome ?? 0),
               ]),
