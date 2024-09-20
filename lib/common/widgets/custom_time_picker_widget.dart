@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/helper/date_converter_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -5,6 +5,9 @@ class TransactionReportModel {
   double? onHold;
   double? canceled;
   double? completedTransactions;
+  double? completedTransactionsDigital;
+  double? completedTransactionsCash;
+  double? totalAdminCommission;
   List<OrderTransactions>? orderTransactions;
 
   TransactionReportModel({
@@ -14,6 +17,9 @@ class TransactionReportModel {
     this.onHold,
     this.canceled,
     this.completedTransactions,
+    this.completedTransactionsDigital,
+    this.completedTransactionsCash,
+    this.totalAdminCommission,
     this.orderTransactions,
   });
 
@@ -24,6 +30,9 @@ class TransactionReportModel {
     onHold = json['on_hold']?.toDouble();
     canceled = json['canceled']?.toDouble();
     completedTransactions = json['completed_transactions']?.toDouble();
+    completedTransactionsDigital = json['completed_transactions_digital']?.toDouble();
+    completedTransactionsCash = json['completed_transactions_cash']?.toDouble();
+    totalAdminCommission = json['total_admin_commission']?.toDouble();
     if (json['order_transactions'] != null) {
       orderTransactions = <OrderTransactions>[];
       json['order_transactions'].forEach((v) {
@@ -40,6 +49,9 @@ class TransactionReportModel {
     data['on_hold'] = onHold;
     data['canceled'] = canceled;
     data['completed_transactions'] = completedTransactions;
+    data['completed_transactions_digital'] = completedTransactionsDigital;
+    data['completed_transactions_cash'] = completedTransactionsCash;
+    data['total_admin_commission'] = totalAdminCommission;
     if (orderTransactions != null) {
       data['order_transactions'] =
           orderTransactions!.map((v) => v.toJson()).toList();

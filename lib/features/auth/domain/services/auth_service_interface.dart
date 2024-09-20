@@ -1,10 +1,10 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:get/get.dart';
-import 'package:stackfood_multivendor_restaurant/common/models/config_model.dart';
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
+import 'package:gazzer_vendorapp/common/models/config_model.dart';
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
 
 abstract class AuthServiceInterface {
   Future<dynamic> login(String? email, String password);

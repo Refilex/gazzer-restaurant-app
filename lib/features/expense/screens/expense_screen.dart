@@ -1,11 +1,11 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_app_bar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/expense/controllers/expense_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/expense/widgets/expense_card_widget.dart';
-import 'package:stackfood_multivendor_restaurant/helper/custom_print_helper.dart';
-import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_app_bar_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/expense/controllers/expense_controller.dart';
+import 'package:gazzer_vendorapp/features/expense/widgets/expense_card_widget.dart';
+import 'package:gazzer_vendorapp/helper/custom_print_helper.dart';
+import 'package:gazzer_vendorapp/helper/date_converter_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

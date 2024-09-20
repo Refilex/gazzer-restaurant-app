@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/update_status_model.dart';
-import 'package:stackfood_multivendor_restaurant/interface/repository_interface.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/update_status_model.dart';
+import 'package:gazzer_vendorapp/interface/repository_interface.dart';
 
 abstract class OrderRepositoryInterface implements RepositoryInterface {
   Future<dynamic> getCurrentOrders();

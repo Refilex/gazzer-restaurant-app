@@ -1,11 +1,11 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/confirmation_dialog_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/coupon/controllers/coupon_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/coupon/domain/models/coupon_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/coupon/screens/add_coupon_screen.dart';
-import 'package:stackfood_multivendor_restaurant/helper/price_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/common/widgets/confirmation_dialog_widget.dart';
+import 'package:gazzer_vendorapp/features/coupon/controllers/coupon_controller.dart';
+import 'package:gazzer_vendorapp/features/coupon/domain/models/coupon_body_model.dart';
+import 'package:gazzer_vendorapp/features/coupon/screens/add_coupon_screen.dart';
+import 'package:gazzer_vendorapp/helper/price_converter_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

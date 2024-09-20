@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/expense/domain/models/expense_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/expense/domain/repositories/expense_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/expense/domain/services/expense_service_interface.dart';
+import 'package:gazzer_vendorapp/features/expense/domain/models/expense_model.dart';
+import 'package:gazzer_vendorapp/features/expense/domain/repositories/expense_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/expense/domain/services/expense_service_interface.dart';
 
 class ExpenseService implements ExpenseServiceInterface {
   final ExpenseRepositoryInterface expenseRepositoryInterface;

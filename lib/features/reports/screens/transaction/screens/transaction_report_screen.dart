@@ -1,14 +1,14 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_app_bar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/reports/controllers/report_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/reports/screens/transaction/widget/transaction_report_details_card_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/reports/screens/transaction/widget/transaction_status_card_widget.dart';
-import 'package:stackfood_multivendor_restaurant/helper/custom_print_helper.dart';
-import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_app_bar_widget.dart';
+import 'package:gazzer_vendorapp/features/reports/controllers/report_controller.dart';
+import 'package:gazzer_vendorapp/features/reports/screens/transaction/widget/transaction_report_details_card_widget.dart';
+import 'package:gazzer_vendorapp/features/reports/screens/transaction/widget/transaction_status_card_widget.dart';
+import 'package:gazzer_vendorapp/helper/custom_print_helper.dart';
+import 'package:gazzer_vendorapp/helper/date_converter_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class TransactionReportScreen extends StatefulWidget {
   const TransactionReportScreen({super.key});
@@ -95,110 +95,147 @@ class _TransactionReportScreenState extends State<TransactionReportScreen> {
                               const SizedBox(
                                   width: Dimensions.paddingSizeDefault),
                               TransactionStatusCardWidget(
-                                isOnHold: true,
-                                amount: reportController.onHold ?? 0,
-                                onHoldToolTip: onHoldToolTip,
+                                isCompleted: true,
+                                isCompletedCash: true,
+                                amount: reportController
+                                        .completedTransactionsCash ??
+                                    0,
+                                completedToolTip: completedToolTip,
                               ),
                               const SizedBox(
                                   width: Dimensions.paddingSizeDefault),
                               TransactionStatusCardWidget(
-                                amount: reportController.canceled ?? 0,
-                                canceledToolTip: canceledToolTip,
+                                isCompleted: true,
+                                isCompletedDigital: true,
+                                amount: reportController
+                                        .completedTransactionsDigital ??
+                                    0,
+                                completedToolTip: completedToolTip,
                               ),
-                            ]),
+                              const SizedBox(
+                                  width: Dimensions.paddingSizeDefault),
+                              TransactionStatusCardWidget(
+                                isCompleted: true,
+                                isTotalAdminCommission: true,
+                                amount: reportController
+                                        .totalAdminCommission ??
+                                    0,
+                                completedToolTip: completedToolTip,
+                              ),
+                              const SizedBox(
+                                  width: Dimensions.paddingSizeDefault),
+                              TransactionStatusCardWidget(
+                          isOnHold: true,
+                          amount: reportController.onHold ?? 0,
+                          onHoldToolTip: onHoldToolTip,
+                        ),
+                        const SizedBox(
+                            width: Dimensions.paddingSizeDefault),
+                        TransactionStatusCardWidget(
+                          amount: reportController.canceled ?? 0,
+                          canceledToolTip: canceledToolTip,
+                        ),
+                      ]),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: Dimensions.paddingSizeDefault),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          "total_transactions".tr,
+                          style: robotoBold.copyWith(
+                            fontSize: Dimensions.fontSizeLarge,
+                            color: Theme
+                                .of(context)
+                                .textTheme
+                                .bodyLarge!
+                                .color,
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: Dimensions.paddingSizeDefault),
-                        child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text(
-                                "total_transactions".tr,
-                                style: robotoBold.copyWith(
-                                  fontSize: Dimensions.fontSizeLarge,
-                                  color: Theme.of(context)
-                                      .textTheme
-                                      .bodyLarge!
-                                      .color,
-                                ),
-                              ),
-                              const Spacer(),
-                              Container(
-                                padding: const EdgeInsets.all(
-                                    Dimensions.paddingSizeExtraSmall),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(
-                                      Dimensions.radiusSmall),
-                                  color: Theme.of(context)
-                                      .primaryColor
-                                      .withOpacity(0.05),
-                                ),
-                                child: Text(
-                                    DateConverter.convertDateToDate(
-                                        reportController.from!),
-                                    style: robotoMedium.copyWith(
-                                        fontSize: Dimensions.fontSizeSmall)),
-                              ),
-                              const SizedBox(width: 5),
-                              Text('to'.tr,
-                                  style: robotoMedium.copyWith(
-                                      color: Theme.of(context).disabledColor,
-                                      fontSize: Dimensions.fontSizeSmall)),
-                              const SizedBox(width: 5),
-                              Container(
-                                padding: const EdgeInsets.all(
-                                    Dimensions.paddingSizeExtraSmall),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(
-                                      Dimensions.radiusSmall),
-                                  color: Theme.of(context)
-                                      .primaryColor
-                                      .withOpacity(0.05),
-                                ),
-                                child: Text(
-                                    DateConverter.convertDateToDate(
-                                        reportController.to!),
-                                    style: robotoMedium.copyWith(
-                                        fontSize: Dimensions.fontSizeSmall)),
-                              ),
-                            ]),
-                      ),
-                      reportController.orderTransactions != null
-                          ? reportController.orderTransactions!.isNotEmpty
-                              ? ListView.builder(
-                                  padding: const EdgeInsets.all(
-                                      Dimensions.paddingSizeDefault),
-                                  shrinkWrap: true,
-                                  physics: const NeverScrollableScrollPhysics(),
-                                  itemCount: reportController
-                                      .orderTransactions!.length,
-                                  itemBuilder: (context, index) {
-                                    return TransactionReportDetailsCardWidget(
-                                        orderTransactions: reportController
-                                            .orderTransactions![index]);
-                                  },
-                                )
-                              : Center(
-                                  child: Padding(
-                                      padding: const EdgeInsets.only(top: 200),
-                                      child: Text('no_transaction_found'.tr,
-                                          style: robotoMedium)))
-                          : const Center(child: CircularProgressIndicator()),
-                      reportController.isLoading
-                          ? Center(
-                              child: Padding(
-                              padding: const EdgeInsets.all(
-                                  Dimensions.paddingSizeSmall),
-                              child: CircularProgressIndicator(
-                                  valueColor: AlwaysStoppedAnimation<Color>(
-                                      Theme.of(context).primaryColor)),
-                            ))
-                          : const SizedBox(),
-                    ]),
-              )
+                        const Spacer(),
+                        Container(
+                          padding: const EdgeInsets.all(
+                              Dimensions.paddingSizeExtraSmall),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(
+                                Dimensions.radiusSmall),
+                            color: Theme
+                                .of(context)
+                                .primaryColor
+                                .withOpacity(0.05),
+                          ),
+                          child: Text(
+                              DateConverter.convertDateToDate(
+                                  reportController.from!),
+                              style: robotoMedium.copyWith(
+                                  fontSize: Dimensions.fontSizeSmall)),
+                        ),
+                        const SizedBox(width: 5),
+                        Text('to'.tr,
+                            style: robotoMedium.copyWith(
+                                color: Theme
+                                    .of(context)
+                                    .disabledColor,
+                                fontSize: Dimensions.fontSizeSmall)),
+                        const SizedBox(width: 5),
+                        Container(
+                          padding: const EdgeInsets.all(
+                              Dimensions.paddingSizeExtraSmall),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(
+                                Dimensions.radiusSmall),
+                            color: Theme
+                                .of(context)
+                                .primaryColor
+                                .withOpacity(0.05),
+                          ),
+                          child: Text(
+                              DateConverter.convertDateToDate(
+                                  reportController.to!),
+                              style: robotoMedium.copyWith(
+                                  fontSize: Dimensions.fontSizeSmall)),
+                        ),
+                      ]),
+                ),
+                reportController.orderTransactions != null
+                    ? reportController.orderTransactions!.isNotEmpty
+                    ? ListView.builder(
+                  padding: const EdgeInsets.all(
+                      Dimensions.paddingSizeDefault),
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: reportController
+                      .orderTransactions!.length,
+                  itemBuilder: (context, index) {
+                    return TransactionReportDetailsCardWidget(
+                        orderTransactions: reportController
+                            .orderTransactions![index]);
+                  },
+                )
+                    : Center(
+                    child: Padding(
+                        padding: const EdgeInsets.only(top: 200),
+                        child: Text('no_transaction_found'.tr,
+                            style: robotoMedium)))
+                    : const Center(child: CircularProgressIndicator()),
+                reportController.isLoading
+                    ? Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(
+                          Dimensions.paddingSizeSmall),
+                      child: CircularProgressIndicator(
+                          valueColor: AlwaysStoppedAnimation<Color>(
+                              Theme
+                                  .of(context)
+                                  .primaryColor)),
+                    ))
+                    : const SizedBox(),
+              ]),
+        )
             : const Center(child: CircularProgressIndicator());
       }),
     );

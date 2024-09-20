@@ -1,8 +1,8 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/domain/models/business_plan_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/domain/models/package_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/domain/repositories/business_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/business/domain/models/business_plan_model.dart';
+import 'package:gazzer_vendorapp/features/business/domain/models/package_model.dart';
+import 'package:gazzer_vendorapp/features/business/domain/repositories/business_repository_interface.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 
 class BusinessRepository implements BusinessRepositoryInterface<PackageModel> {

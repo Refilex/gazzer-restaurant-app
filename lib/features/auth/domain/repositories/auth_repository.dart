@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/repositories/auth_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/repositories/auth_repository_interface.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';

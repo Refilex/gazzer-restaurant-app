@@ -1,20 +1,20 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_app_bar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_button_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_image_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/controllers/restaurant_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/widgets/review_widget.dart';
-import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/helper/price_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:get/get.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_app_bar_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_button_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_image_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/features/restaurant/controllers/restaurant_controller.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/widgets/review_widget.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/helper/date_converter_helper.dart';
+import 'package:gazzer_vendorapp/helper/price_converter_helper.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   final Product product;
@@ -163,7 +163,7 @@ class ProductDetailsScreen extends StatelessWidget {
                         ),
                       ),
                       FlutterSwitch(
-                          width: 60,
+                          width: 70,
                           height: 30,
                           valueFontSize: Dimensions.fontSizeExtraSmall,
                           showOnOff: true,
@@ -183,7 +183,7 @@ class ProductDetailsScreen extends StatelessWidget {
                         ),
                       ),
                       FlutterSwitch(
-                        width: 60,
+                        width: 70,
                         height: 30,
                         valueFontSize: Dimensions.fontSizeExtraSmall,
                         showOnOff: true,

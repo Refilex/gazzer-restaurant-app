@@ -1,14 +1,16 @@
-import 'package:intl/intl.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class TransactionStatusCardWidget extends StatelessWidget {
   final bool isCompleted;
+  final bool isCompletedCash;
+  final bool isCompletedDigital;
+  final bool isTotalAdminCommission;
   final bool isOnHold;
   final double amount;
   final JustTheController? completedToolTip;
@@ -18,6 +20,9 @@ class TransactionStatusCardWidget extends StatelessWidget {
   const TransactionStatusCardWidget(
       {super.key,
       this.isCompleted = false,
+      this.isCompletedCash = false,
+      this.isCompletedDigital = false,
+      this.isTotalAdminCommission = false,
       this.isOnHold = false,
       required this.amount,
       this.completedToolTip,
@@ -136,7 +141,7 @@ class TransactionStatusCardWidget extends StatelessWidget {
             const SizedBox(height: Dimensions.paddingSizeDefault),
             Text(
               '${isRightSide ? '' : '${Get.find<SplashController>().configModel!.currencySymbol!} '}'
-              '${NumberFormat.compact().format(amount)}'
+              '$amount'
               '${isRightSide ? ' ${Get.find<SplashController>().configModel!.currencySymbol!}' : ''}',
               style: robotoBold.copyWith(
                 fontSize: 20,
@@ -151,11 +156,19 @@ class TransactionStatusCardWidget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 23),
               child: Text(
-                isCompleted
-                    ? "completed_transactions".tr
-                    : isOnHold
-                        ? "on_hold_transactions".tr
-                        : "canceled_transactions".tr,
+                (() {
+                  if (isCompleted) {
+                    if (isCompletedCash) return "completed_transactions_cash".tr;
+                    if (isCompletedDigital) return "completed_transactions_digital".tr;
+                    if (isTotalAdminCommission) return "total_admin_commission".tr;
+                    
+                    return "completed_transactions".tr;
+                  } else if (isOnHold) {
+                    return "on_hold_transactions".tr;
+                  } else {
+                    return "canceled_transactions".tr;
+                  }
+                })(),
                 textAlign: TextAlign.center,
                 style: robotoRegular.copyWith(
                   fontSize: Dimensions.fontSizeSmall,

@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/campaign/domain/models/campaign_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/campaign/domain/services/campaign_service_interface.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/campaign/domain/models/campaign_model.dart';
+import 'package:gazzer_vendorapp/features/campaign/domain/services/campaign_service_interface.dart';
 import 'package:get/get.dart';
 
 class CampaignController extends GetxController implements GetxService {

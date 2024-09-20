@@ -1,9 +1,9 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/models/delivery_man_list_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/models/delivery_man_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/repositories/deliveryman_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/review_model.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/models/delivery_man_list_model.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/models/delivery_man_model.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/repositories/deliveryman_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/review_model.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 

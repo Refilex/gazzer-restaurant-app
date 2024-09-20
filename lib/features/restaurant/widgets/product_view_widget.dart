@@ -1,9 +1,9 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/product_shimmer_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/product_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/controllers/restaurant_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/widgets/veg_filter_widget.dart';
-import 'package:stackfood_multivendor_restaurant/helper/custom_print_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/common/widgets/product_shimmer_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/product_widget.dart';
+import 'package:gazzer_vendorapp/features/restaurant/controllers/restaurant_controller.dart';
+import 'package:gazzer_vendorapp/features/restaurant/widgets/veg_filter_widget.dart';
+import 'package:gazzer_vendorapp/helper/custom_print_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,12 +1,12 @@
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/bank_info_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/wallet_payment_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/widthdrow_method_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/withdraw_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/repositories/payment_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/bank_info_body_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/wallet_payment_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/widthdrow_method_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/withdraw_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/repositories/payment_repository_interface.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:stackfood_multivendor_restaurant/features/language/controllers/localization_controller.dart';
-import 'package:stackfood_multivendor_restaurant/common/controllers/theme_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/chat/domain/models/notification_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/helper/notification_helper.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
-import 'package:stackfood_multivendor_restaurant/theme/dark_theme.dart';
-import 'package:stackfood_multivendor_restaurant/theme/light_theme.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
-import 'package:stackfood_multivendor_restaurant/util/messages.dart';
+import 'package:gazzer_vendorapp/features/language/controllers/localization_controller.dart';
+import 'package:gazzer_vendorapp/common/controllers/theme_controller.dart';
+import 'package:gazzer_vendorapp/features/chat/domain/models/notification_body_model.dart';
+import 'package:gazzer_vendorapp/helper/notification_helper.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/theme/dark_theme.dart';
+import 'package:gazzer_vendorapp/theme/light_theme.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
+import 'package:gazzer_vendorapp/util/messages.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +26,18 @@ Future<void> main() async {
   }
   setPathUrlStrategy();
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  if (GetPlatform.isAndroid) {
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(
+        apiKey: 'AIzaSyCfxGdnL_KhgbNDY7mFQh-tHHBqIaxisYw',
+        appId: '1:671839887516:android:d4948b23c25f791f798d59',
+        messagingSenderId: '671839887516',
+        projectId: 'gazzer-app',
+      ),
+    );
+  } else {
+    await Firebase.initializeApp();
+  }
   Map<String, Map<String, String>> languages = await di.init();
 
   NotificationBodyModel? body;

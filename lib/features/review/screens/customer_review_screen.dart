@@ -1,15 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_app_bar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/chat/widgets/search_field_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/controllers/restaurant_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/review_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/review/widgets/customer_review_screen_shimmer.dart';
-import 'package:stackfood_multivendor_restaurant/features/review/widgets/review_card_widget.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_app_bar_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/chat/widgets/search_field_widget.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/features/restaurant/controllers/restaurant_controller.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/review_model.dart';
+import 'package:gazzer_vendorapp/features/review/widgets/customer_review_screen_shimmer.dart';
+import 'package:gazzer_vendorapp/features/review/widgets/review_card_widget.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 
 class CustomerReviewScreen extends StatefulWidget {
   const CustomerReviewScreen({super.key});

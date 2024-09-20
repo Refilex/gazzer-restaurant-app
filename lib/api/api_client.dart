@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:stackfood_multivendor_restaurant/api/api_checker.dart';
+import 'package:gazzer_vendorapp/api/api_checker.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http_parser/http_parser.dart';
-import 'package:stackfood_multivendor_restaurant/common/models/error_response.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/common/models/error_response.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';

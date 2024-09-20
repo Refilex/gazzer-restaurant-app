@@ -1,15 +1,15 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_app_bar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_button_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_text_field_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/controllers/auth_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/controllers/forgot_password_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_app_bar_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_button_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_text_field_widget.dart';
+import 'package:gazzer_vendorapp/features/auth/controllers/auth_controller.dart';
+import 'package:gazzer_vendorapp/features/auth/controllers/forgot_password_controller.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

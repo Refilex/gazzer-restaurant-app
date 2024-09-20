@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/auth/controllers/location_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/prediction_model.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/features/auth/controllers/location_controller.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/prediction_model.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:get/get.dart';

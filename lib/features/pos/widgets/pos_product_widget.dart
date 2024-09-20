@@ -1,14 +1,14 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_image_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/rating_bar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/pos/controllers/pos_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/pos/domain/models/cart_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/pos/widgets/quantity_button_widget.dart';
-import 'package:stackfood_multivendor_restaurant/helper/price_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/helper/responsive_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_image_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/rating_bar_widget.dart';
+import 'package:gazzer_vendorapp/features/pos/controllers/pos_controller.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/features/pos/domain/models/cart_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/features/pos/widgets/quantity_button_widget.dart';
+import 'package:gazzer_vendorapp/helper/price_converter_helper.dart';
+import 'package:gazzer_vendorapp/helper/responsive_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

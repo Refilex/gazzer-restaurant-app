@@ -1,6 +1,6 @@
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/zone_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/zone_response_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/zone_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/zone_response_model.dart';
 
 abstract class LocationServiceInterface {
   Future<dynamic> getZoneList();

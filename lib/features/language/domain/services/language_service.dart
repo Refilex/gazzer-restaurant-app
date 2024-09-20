@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stackfood_multivendor_restaurant/features/language/domain/repositories/language_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/language/domain/services/language_service_interface.dart';
+import 'package:gazzer_vendorapp/features/language/domain/repositories/language_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/language/domain/services/language_service_interface.dart';
 
 class LanguageService implements LanguageServiceInterface {
   final LanguageRepositoryInterface languageRepositoryInterface;

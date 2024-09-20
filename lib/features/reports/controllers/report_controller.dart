@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/reports/domain/services/report_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/reports/domain/models/report_model.dart';
-import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
+import 'package:gazzer_vendorapp/features/reports/domain/services/report_service_interface.dart';
+import 'package:gazzer_vendorapp/features/reports/domain/models/report_model.dart';
+import 'package:gazzer_vendorapp/helper/date_converter_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -33,7 +33,18 @@ class ReportController extends GetxController implements GetxService {
 
   double? _completedTransactions;
 
+  double? _completedTransactionsCash;
+
+  double? _completedTransactionsDigital;
+  double? _totalAdminCommission;
+
   double? get completedTransactions => _completedTransactions;
+
+  double? get completedTransactionsCash => _completedTransactionsCash;
+
+  double? get completedTransactionsDigital => _completedTransactionsDigital;
+
+  double? get totalAdminCommission => _totalAdminCommission;
 
   List<OrderTransactions>? _orderTransactions;
 
@@ -105,6 +116,12 @@ class ReportController extends GetxController implements GetxService {
         _onHold = transactionReportModel.onHold;
         _canceled = transactionReportModel.canceled;
         _completedTransactions = transactionReportModel.completedTransactions;
+        _completedTransactionsDigital =
+            transactionReportModel.completedTransactionsDigital;
+        _completedTransactionsCash =
+            transactionReportModel.completedTransactionsCash;
+        _totalAdminCommission =
+            transactionReportModel.totalAdminCommission;
         if (offset == '1') {
           _orderTransactions = [];
         }

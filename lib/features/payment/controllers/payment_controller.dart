@@ -1,14 +1,14 @@
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/services/payment_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/bank_info_body_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/wallet_payment_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/widthdrow_method_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/withdraw_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/services/payment_service_interface.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/bank_info_body_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/wallet_payment_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/widthdrow_method_model.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/withdraw_model.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class PaymentController extends GetxController implements GetxService {
   final PaymentServiceInterface paymentServiceInterface;

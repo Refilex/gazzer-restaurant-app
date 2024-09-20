@@ -1,18 +1,18 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_image_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/controllers/restaurant_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/widgets/product_view_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/widgets/review_widget.dart';
-import 'package:stackfood_multivendor_restaurant/helper/price_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_image_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/controllers/restaurant_controller.dart';
+import 'package:gazzer_vendorapp/features/restaurant/widgets/product_view_widget.dart';
+import 'package:gazzer_vendorapp/features/restaurant/widgets/review_widget.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/helper/price_converter_helper.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class RestaurantScreen extends StatefulWidget {
   const RestaurantScreen({super.key});
@@ -180,36 +180,36 @@ class _RestaurantScreenState extends State<RestaurantScreen>
                                       color: Theme.of(context).disabledColor),
                                 ),
                               ])),
-                          InkWell(
-                            onTap: () => Get.toNamed(
-                                RouteHelper.getAnnouncementRoute(
-                                    announcementStatus:
-                                        restaurant.isAnnouncementActive!,
-                                    announcementMessage:
-                                        restaurant.announcementMessage ?? '')),
-                            child: Container(
-                              padding: const EdgeInsets.all(
-                                  Dimensions.paddingSizeSmall),
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Theme.of(context).primaryColor,
-                                border: Border.all(
-                                    color: Theme.of(context).cardColor,
-                                    width: 2),
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.grey.withOpacity(0.2),
-                                      spreadRadius: 1,
-                                      blurRadius: 5,
-                                      offset: const Offset(0, 1))
-                                ],
-                              ),
-                              child: Image.asset(Images.announcementIcon,
-                                  height: 20,
-                                  width: 20,
-                                  color: Theme.of(context).cardColor),
-                            ),
-                          ),
+                          // InkWell(
+                          //   onTap: () => Get.toNamed(
+                          //       RouteHelper.getAnnouncementRoute(
+                          //           announcementStatus:
+                          //               restaurant.isAnnouncementActive!,
+                          //           announcementMessage:
+                          //               restaurant.announcementMessage ?? '')),
+                          //   child: Container(
+                          //     padding: const EdgeInsets.all(
+                          //         Dimensions.paddingSizeSmall),
+                          //     decoration: BoxDecoration(
+                          //       shape: BoxShape.circle,
+                          //       color: Theme.of(context).primaryColor,
+                          //       border: Border.all(
+                          //           color: Theme.of(context).cardColor,
+                          //           width: 2),
+                          //       boxShadow: [
+                          //         BoxShadow(
+                          //             color: Colors.grey.withOpacity(0.2),
+                          //             spreadRadius: 1,
+                          //             blurRadius: 5,
+                          //             offset: const Offset(0, 1))
+                          //       ],
+                          //     ),
+                          //     child: Image.asset(Images.announcementIcon,
+                          //         height: 20,
+                          //         width: 20,
+                          //         color: Theme.of(context).cardColor),
+                          //   ),
+                          // ),
                         ]),
                         const SizedBox(
                             height: Dimensions.paddingSizeExtraSmall),

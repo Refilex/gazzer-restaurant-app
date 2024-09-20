@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/pos/domain/repositories/pos_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/pos/domain/repositories/pos_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 
 class PosRepository implements PosRepositoryInterface {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/language/domain/repositories/language_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/language/domain/repositories/language_repository_interface.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 
 class LanguageRepository implements LanguageRepositoryInterface {
   final ApiClient apiClient;

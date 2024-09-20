@@ -1,7 +1,7 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/notification/domain/models/notification_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/notification/domain/repositories/notification_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/notification/domain/models/notification_model.dart';
+import 'package:gazzer_vendorapp/features/notification/domain/repositories/notification_repository_interface.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

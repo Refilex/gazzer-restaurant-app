@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
 
 abstract class ForgotPasswordServiceInterface {
   Future<dynamic> forgotPassword(String? email);

@@ -1,13 +1,13 @@
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/disbursement/domain/services/disbursement_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_dropdown_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/payment/controllers/payment_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/disbursement/domain/models/disbursement_method_model.dart'
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/features/disbursement/domain/services/disbursement_service_interface.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_dropdown_widget.dart';
+import 'package:gazzer_vendorapp/features/payment/controllers/payment_controller.dart';
+import 'package:gazzer_vendorapp/features/disbursement/domain/models/disbursement_method_model.dart'
     as disburse;
-import 'package:stackfood_multivendor_restaurant/features/disbursement/domain/models/disbursement_report_model.dart'
+import 'package:gazzer_vendorapp/features/disbursement/domain/models/disbursement_report_model.dart'
     as report;
-import 'package:stackfood_multivendor_restaurant/features/payment/domain/models/widthdrow_method_model.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/payment/domain/models/widthdrow_method_model.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

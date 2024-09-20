@@ -1,13 +1,12 @@
-import 'package:stackfood_multivendor_restaurant/features/language/domain/models/language_model.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
+import 'package:gazzer_vendorapp/features/language/domain/models/language_model.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
 
 class AppConstants {
-  static const String appName = 'Gazzer Restaurant';
+  static const String appName = 'Gazzer Vendor';
   static const double appVersion = 7.6;
 
-  static const String baseUrl = 'https://stackfood-admin.6amtech.com';
+  static const String baseUrl = 'https://carrot.refilex.com';
 
-  // https://stackfood-admin.6amtech.com
   static const String configUri = '/api/v1/config';
   static const String loginUri = '/api/v1/auth/vendor/login';
   static const String forgetPasswordUri = '/api/v1/auth/vendor/forgot-password';
@@ -160,15 +159,15 @@ class AppConstants {
         languageName: 'Arabic',
         countryCode: 'SA',
         languageCode: 'ar'),
-    LanguageModel(
-        imageUrl: Images.spanish,
-        languageName: 'Spanish',
-        countryCode: 'ES',
-        languageCode: 'es'),
-    LanguageModel(
-        imageUrl: Images.bengali,
-        languageName: 'Bengali',
-        countryCode: 'BN',
-        languageCode: 'bn'),
+    // LanguageModel(
+    //     imageUrl: Images.spanish,
+    //     languageName: 'Spanish',
+    //     countryCode: 'ES',
+    //     languageCode: 'es'),
+    // LanguageModel(
+    //     imageUrl: Images.bengali,
+    //     languageName: 'Bengali',
+    //     countryCode: 'BN',
+    //     languageCode: 'bn'),
   ];
 }

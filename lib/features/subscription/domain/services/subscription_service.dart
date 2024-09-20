@@ -1,5 +1,5 @@
-import 'package:stackfood_multivendor_restaurant/features/subscription/domain/repositories/subscription_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/subscription/domain/services/subscription_service_interface.dart';
+import 'package:gazzer_vendorapp/features/subscription/domain/repositories/subscription_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/subscription/domain/services/subscription_service_interface.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
 
 class SubscriptionService implements SubscriptionServiceInterface {

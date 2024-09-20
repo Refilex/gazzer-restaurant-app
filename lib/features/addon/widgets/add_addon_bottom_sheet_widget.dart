@@ -1,18 +1,18 @@
 import 'package:flutter/foundation.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_dropdown_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_text_form_field_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/models/config_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/controllers/restaurant_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/addon/controllers/addon_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/helper/custom_print_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_button_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_dropdown_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_text_form_field_widget.dart';
+import 'package:gazzer_vendorapp/common/models/config_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/controllers/restaurant_controller.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/features/addon/controllers/addon_controller.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/helper/custom_print_helper.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_button_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class AddAddonBottomSheetWidget extends StatefulWidget {
   final AddOns? addon;

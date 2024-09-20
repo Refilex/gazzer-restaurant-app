@@ -1,5 +1,5 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/interface/repository_interface.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/interface/repository_interface.dart';
 import 'package:image_picker/image_picker.dart';
 
 abstract class AuthRepositoryInterface implements RepositoryInterface {

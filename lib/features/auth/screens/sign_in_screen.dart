@@ -1,16 +1,16 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_button_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_text_field_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/controllers/auth_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_button_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_text_field_widget.dart';
+import 'package:gazzer_vendorapp/features/auth/controllers/auth_controller.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class SignInScreen extends StatelessWidget {
   SignInScreen({super.key});
@@ -51,7 +51,7 @@ class SignInScreen extends StatelessWidget {
                         style: robotoBlack.copyWith(fontSize: 30)),
                     const SizedBox(height: Dimensions.paddingSizeExtraSmall),
                     Text(
-                      'only_for_restaurant_owner'.tr,
+                      'only_for_merchant'.tr,
                       textAlign: TextAlign.center,
                       style: robotoRegular.copyWith(
                           fontSize: Dimensions.fontSizeExtraSmall,
@@ -115,7 +115,7 @@ class SignInScreen extends StatelessWidget {
                       TextButton(
                         onPressed: () =>
                             Get.toNamed(RouteHelper.getForgotPassRoute()),
-                        child: Text('${'forgot_password'.tr}?'),
+                        child: Text('forgot_password'.tr),
                       ),
                     ]),
                     const SizedBox(height: 50),

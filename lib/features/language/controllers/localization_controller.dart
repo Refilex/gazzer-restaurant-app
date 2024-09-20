@@ -1,8 +1,8 @@
-import 'package:stackfood_multivendor_restaurant/features/auth/controllers/auth_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/language/domain/services/language_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/controllers/restaurant_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/features/auth/controllers/auth_controller.dart';
+import 'package:gazzer_vendorapp/features/language/domain/services/language_service_interface.dart';
+import 'package:gazzer_vendorapp/features/restaurant/controllers/restaurant_controller.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

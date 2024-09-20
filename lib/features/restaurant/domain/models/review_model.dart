@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/order_model.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/order_model.dart';
 
 class ReviewModel {
   int? id;

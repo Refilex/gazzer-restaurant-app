@@ -1,9 +1,9 @@
 import 'package:custom_info_window/custom_info_window.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/controllers/deliveryman_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/splash/controllers/splash_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/models/delivery_man_list_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/widgets/map_custom_info_window_widget.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/controllers/deliveryman_controller.dart';
+import 'package:gazzer_vendorapp/features/splash/controllers/splash_controller.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/models/delivery_man_list_model.dart';
+import 'package:gazzer_vendorapp/features/order/widgets/map_custom_info_window_widget.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:get/get.dart';

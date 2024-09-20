@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/addon/domain/services/addon_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/features/addon/domain/services/addon_service_interface.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
 import 'package:get/get.dart';
 
 class AddonController extends GetxController implements GetxService {

@@ -1,11 +1,11 @@
 import 'dart:math';
 
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/place_details_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/prediction_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/zone_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/zone_response_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/repositories/location_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/services/location_service_interface.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/place_details_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/prediction_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/zone_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/zone_response_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/repositories/location_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/services/location_service_interface.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 

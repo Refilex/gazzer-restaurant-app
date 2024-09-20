@@ -1,8 +1,8 @@
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/chat/domain/models/conversation_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/chat/domain/repositories/chat_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/helper/user_type.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/chat/domain/models/conversation_model.dart';
+import 'package:gazzer_vendorapp/features/chat/domain/repositories/chat_repository_interface.dart';
+import 'package:gazzer_vendorapp/helper/user_type.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

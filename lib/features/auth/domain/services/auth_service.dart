@@ -1,16 +1,16 @@
 import 'package:file_picker/file_picker.dart';
-import 'package:stackfood_multivendor_restaurant/common/models/config_model.dart';
-import 'package:stackfood_multivendor_restaurant/common/models/response_model.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/repositories/auth_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/services/auth_service_interface.dart';
+import 'package:gazzer_vendorapp/common/models/config_model.dart';
+import 'package:gazzer_vendorapp/common/models/response_model.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/repositories/auth_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/services/auth_service_interface.dart';
 import 'package:get/get.dart';
 import 'dart:async';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:stackfood_multivendor_restaurant/features/business/screens/business_plan_screen.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/features/business/screens/business_plan_screen.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
 
 class AuthService implements AuthServiceInterface {
   final AuthRepositoryInterface authRepoInterface;

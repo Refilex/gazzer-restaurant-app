@@ -1,10 +1,10 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/models/delivery_man_list_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/models/delivery_man_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/deliveryman/domain/services/deliveryman_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/controllers/order_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/order_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/review_model.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/models/delivery_man_list_model.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/models/delivery_man_model.dart';
+import 'package:gazzer_vendorapp/features/deliveryman/domain/services/deliveryman_service_interface.dart';
+import 'package:gazzer_vendorapp/features/order/controllers/order_controller.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/order_model.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/review_model.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:get/get.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
 
 class CustomerReviewScreenShimmer extends StatelessWidget {
   const CustomerReviewScreenShimmer({super.key});

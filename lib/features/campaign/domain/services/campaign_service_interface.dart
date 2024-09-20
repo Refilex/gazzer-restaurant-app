@@ -1,4 +1,4 @@
-import 'package:stackfood_multivendor_restaurant/features/campaign/domain/models/campaign_model.dart';
+import 'package:gazzer_vendorapp/features/campaign/domain/models/campaign_model.dart';
 
 abstract class CampaignServiceInterface {
   Future<dynamic> getCampaignList();

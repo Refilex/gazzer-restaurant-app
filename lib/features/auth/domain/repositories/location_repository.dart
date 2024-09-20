@@ -1,10 +1,10 @@
-import 'package:stackfood_multivendor_restaurant/common/widgets/custom_snackbar_widget.dart';
-import 'package:stackfood_multivendor_restaurant/api/api_client.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/place_details_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/prediction_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/models/zone_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/domain/repositories/location_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/util/app_constants.dart';
+import 'package:gazzer_vendorapp/common/widgets/custom_snackbar_widget.dart';
+import 'package:gazzer_vendorapp/api/api_client.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/place_details_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/prediction_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/models/zone_model.dart';
+import 'package:gazzer_vendorapp/features/auth/domain/repositories/location_repository_interface.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';

@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/reports/domain/models/report_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/reports/domain/repositories/report_repository_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/reports/domain/services/report_service_interface.dart';
+import 'package:gazzer_vendorapp/features/reports/domain/models/report_model.dart';
+import 'package:gazzer_vendorapp/features/reports/domain/repositories/report_repository_interface.dart';
+import 'package:gazzer_vendorapp/features/reports/domain/services/report_service_interface.dart';
 
 class ReportService implements ReportServiceInterface {
   final ReportRepositoryInterface reportRepositoryInterface;

@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/category/domain/models/category_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/category/domain/services/categoty_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/restaurant/domain/models/product_model.dart';
+import 'package:gazzer_vendorapp/features/category/domain/models/category_model.dart';
+import 'package:gazzer_vendorapp/features/category/domain/services/categoty_service_interface.dart';
+import 'package:gazzer_vendorapp/features/restaurant/domain/models/product_model.dart';
 import 'package:get/get.dart';
 
 class CategoryController extends GetxController implements GetxService {

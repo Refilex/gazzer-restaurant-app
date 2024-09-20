@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/interface/repository_interface.dart';
+import 'package:gazzer_vendorapp/interface/repository_interface.dart';
 import 'dart:async';
-import 'package:stackfood_multivendor_restaurant/features/profile/domain/models/profile_model.dart';
+import 'package:gazzer_vendorapp/features/profile/domain/models/profile_model.dart';
 import 'package:image_picker/image_picker.dart';
 
 abstract class ProfileRepositoryInterface implements RepositoryInterface {

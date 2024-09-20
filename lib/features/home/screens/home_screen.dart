@@ -1,21 +1,22 @@
-import 'package:stackfood_multivendor_restaurant/common/controllers/theme_controller.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/confirmation_dialog_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/order_shimmer_widget.dart';
-import 'package:stackfood_multivendor_restaurant/common/widgets/order_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/auth/controllers/auth_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/notification/controllers/notification_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/controllers/order_controller.dart';
-import 'package:stackfood_multivendor_restaurant/features/order/domain/models/order_model.dart';
-import 'package:stackfood_multivendor_restaurant/features/home/widgets/order_button_widget.dart';
-import 'package:stackfood_multivendor_restaurant/features/profile/controllers/profile_controller.dart';
-import 'package:stackfood_multivendor_restaurant/helper/price_converter_helper.dart';
-import 'package:stackfood_multivendor_restaurant/helper/route_helper.dart';
-import 'package:stackfood_multivendor_restaurant/util/dimensions.dart';
-import 'package:stackfood_multivendor_restaurant/util/images.dart';
-import 'package:stackfood_multivendor_restaurant/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
+import 'package:gazzer_vendorapp/common/controllers/theme_controller.dart';
+import 'package:gazzer_vendorapp/common/widgets/confirmation_dialog_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/order_shimmer_widget.dart';
+import 'package:gazzer_vendorapp/common/widgets/order_widget.dart';
+import 'package:gazzer_vendorapp/features/auth/controllers/auth_controller.dart';
+import 'package:gazzer_vendorapp/features/home/widgets/order_button_widget.dart';
+import 'package:gazzer_vendorapp/features/notification/controllers/notification_controller.dart';
+import 'package:gazzer_vendorapp/features/order/controllers/order_controller.dart';
+import 'package:gazzer_vendorapp/features/order/domain/models/order_model.dart';
+import 'package:gazzer_vendorapp/features/profile/controllers/profile_controller.dart';
+import 'package:gazzer_vendorapp/helper/price_converter_helper.dart';
+import 'package:gazzer_vendorapp/helper/route_helper.dart';
+import 'package:gazzer_vendorapp/util/app_constants.dart';
+import 'package:gazzer_vendorapp/util/dimensions.dart';
+import 'package:gazzer_vendorapp/util/images.dart';
+import 'package:gazzer_vendorapp/util/styles.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -61,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
         titleSpacing: 0,
         elevation: 0,
         title: const Text(
-          "Gazzer",
+          AppConstants.appName,
           style: TextStyle(
             color: Colors.deepOrange,
             fontSize: 25.0,

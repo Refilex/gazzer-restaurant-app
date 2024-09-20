@@ -1,6 +1,6 @@
-import 'package:stackfood_multivendor_restaurant/features/notification/domain/services/notification_service_interface.dart';
-import 'package:stackfood_multivendor_restaurant/features/notification/domain/models/notification_model.dart';
-import 'package:stackfood_multivendor_restaurant/helper/date_converter_helper.dart';
+import 'package:gazzer_vendorapp/features/notification/domain/services/notification_service_interface.dart';
+import 'package:gazzer_vendorapp/features/notification/domain/models/notification_model.dart';
+import 'package:gazzer_vendorapp/helper/date_converter_helper.dart';
 import 'package:get/get.dart';
 
 class NotificationController extends GetxController implements GetxService {
