@@ -1,4 +1,4 @@
-package com.refilex.gazzer.vendorapp
+package com.refilex.gazzer.vendor
 
 import io.flutter.embedding.android.FlutterActivity
 
